@@ -9,6 +9,9 @@ public class Banking {
 		one.balance = 200;
 		one.name = "Johny Cash";
 		
+		System.out.println(one.getClass().getSimpleName());
+		System.out.println(one instanceof BankAccount);
+		
 		one.showAccountHolder();
 		one.showBallance();
 		one.addAmmount(300);

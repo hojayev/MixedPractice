@@ -9,25 +9,91 @@ public class ElementCount {
 		// TODO Auto-generated method stub
 
 		String input= "AAAABCCCDA";
+		String output= "";
+
+        String[] arr =input.split("");
+        int count;
+        for(int i=0; i < arr.length-1;i++) {
+            count =1;
+            while(i<arr.length-1 && arr[i].equals(arr[i+1]) ) {
+                count++;
+                i++;
+            }
+            output+= count+arr[i];
+            
+        }
+        
+        
+    System.out.println(output);
+    }
+
 		
-		ArrayList <String> a= new ArrayList<>(Arrays.asList(input.split("")));
-		int count=1;
-		String newword="";
 		
-		for(int i=0; i<a.size();i++) {
-			for(int j=i+1; j<a.size();j++) {
-				if(a.get(i).equals(a.get(j))) {
-					count++;
-					a.remove(j);
-					j--;
-				}
-				else break;
-			}
-			newword+=count+a.get(i);
-			count=1;
-		}
-		System.out.println(newword);		
 		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		String[] arr = input.split(""); 
+//		int count = 0;
+//		for (int i = 0; i < arr.length; i++) {
+//			count =1;
+//			for (int j = i+1; j < arr.length; j++) {
+//				if(arr[i].equals(arr[j])) {
+//					count++;
+//					i=j;
+//				}
+//					else { 
+//				
+//					break;
+//				}
+//			}
+//			output +=count +arr[i];
+//			
+//		}
+//		
+//		System.out.println(output);
+//		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		ArrayList <String> a= new ArrayList<>(Arrays.asList(input.split("")));
+//		int count=1;
+//		String newword="";
+//		
+//		for(int i=0; i<a.size();i++) {
+//			System.out.println(a);
+//			for(int j=i+1; j<a.size();j++) {
+//				if(a.get(i).equals(a.get(j))) {
+//					count++;
+//					a.remove(j);
+//					j--;
+//				}
+//				else break;
+//			}
+//			newword+=count+a.get(i);
+//			count=1;
+//			
+//		}
+//		System.out.println(newword);		
+//		
 		
 //		int count = 1;
 //		
@@ -96,6 +162,6 @@ public class ElementCount {
 //		System.out.println(output);
 		
 			
-	}
+	
 
 }

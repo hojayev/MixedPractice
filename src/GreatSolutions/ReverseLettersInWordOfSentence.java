@@ -14,7 +14,7 @@ public class ReverseLettersInWordOfSentence {
 						reversed=""+arr[i].charAt(j);
 						System.out.print(reversed);
 					}
-				System.out.println();
+				System.out.print(" ");
 				}
 		
 		
